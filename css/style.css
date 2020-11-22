@@ -5,9 +5,14 @@ body {
 }
 
 /* defineix font del menu de navegació superior */
-#navbar {
+#navbar,
+#boton_login {
   font-family: "Courier Prime", monospace;
   opacity: 0.8;
+}
+
+#boton_login {
+  color: black;
 }
 
 /* indica n ample màxim per la icona del logo */
@@ -53,40 +58,93 @@ body {
 
 /* MEDIA QUERIES*/
 
-/* Modifiquen l'ample de la barra de cerca , el tamany de la font del brand y de les opcions de menu per tal de que no s'apilin i empenyin el button a una nova llinia */
+/* Modifiquen l'ample de la barra de cerca , el tamany de la font del brand y de les opcions de menu per tal de que no s'apilin i empenyin el button a una nova llinia 
+i el display dels elements del resultat de la cerca*/
 
-@media (min-width: 911px) {
-  .form-control {
+@media (max-width: 990px) {
+  #img1 {
+    display: flex;
+    justify-content: center;
+  }
+  #img2 {
+    display: none;
+  }
+  #img3 {
+    display: none;
+  }
+}
+
+@media (min-width: 991px) {
+  #input_busqueda {
     min-width: 200px;
   }
   #brand {
     font-size: 0.8em;
   }
-  #menu_navbar {
+  #menu_navbar,
+  #boton_login {
     font-size: 0.8rem;
+  }
+  #img1 {
+    display: flex;
+    justify-content: center;
+  }
+  #img2 {
+    display: flex;
+    justify-content: center;
+  }
+  #img3 {
+    display: flex;
+    justify-content: center;
   }
 }
 
 @media (min-width: 1200px) {
-  .form-control {
+  #input_busqueda {
     min-width: 400px;
   }
   #brand {
     font-size: 0.8em;
   }
-  #menu_navbar {
+  #menu_navbar,
+  #boton_login {
     font-size: 0.8rem;
+  }
+  #img1 {
+    display: flex;
+    justify-content: center;
+  }
+  #img2 {
+    display: flex;
+    justify-content: center;
+  }
+  #img3 {
+    display: flex;
+    justify-content: center;
   }
 }
 
 @media (min-width: 1900px) {
-  .form-control {
+  #input_busqueda {
     min-width: 900px;
   }
   #brand {
     font-size: 0.8em;
   }
-  #menu_navbar {
+  #menu_navbar,
+  #boton_login {
     font-size: 0.8rem;
+  }
+  #img1 {
+    display: flex;
+    justify-content: center;
+  }
+  #img2 {
+    display: flex;
+    justify-content: center;
+  }
+  #img3 {
+    display: flex;
+    justify-content: center;
   }
 }

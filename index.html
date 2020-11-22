@@ -41,7 +41,7 @@
                         <div class="container d-md-flex justify-content-center">
                             <form class="form-inline my-2">
                                 <!--  formulari de cerca del catàleg -->
-                                <input class="form-control form-control-sm" type="search"
+                                <input class="form-control form-control-sm" id="input_busqueda" type="search"
                                     placeholder="Buscar por autor, ISBN, editorial, categoría ..."
                                     title="Introduzca cualquiera de los valores a buscar sobre el título deseado">
                                 <!-- input del text a cercar -->
@@ -50,10 +50,13 @@
                                 <!-- butó per fer el submit de la cerca -->
                             </form>
                         </div>
+
                         <ul class="navbar-nav ml-auto" id="menu_navbar">
                             <!-- llista d'opcions del menú de navegació -->
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Acceso</a>
+                                <button class="nav-link btn font-weight-bold" id="boton_login" type="button"
+                                    data-toggle="modal" data-target="#login_modal">Acceso
+                                </button>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Catálogo</a>
@@ -73,17 +76,51 @@
             </div>
         </div>
 
+        <!-- Modal -->
+        <div class="modal fade" id="login_modal" tabindex="-1" role="dialog" aria-labelledby="login_modal"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="login_modal">Login</h5>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="md-form">
+                            <div class="form-group">
+                                <label for="input_email">Usuario (email)</label>
+                                <input type="email" name="input_email" class="form-control" id="input_email"
+                                    placeholder="Introduzca email">
+                            </div>
+                            <div class="form-group">
+                                <label for="input_password">Password</label>
+                                <input name="input_password" type="password" class="form-control" id="input_password"
+                                    placeholder="Password">
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Recuérdame</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Entrar</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <section class="row my-5" id="expo">
             <!-- secció on s'exposa el catàleg de destacats o els resultats de la cerca -->
-            <!--Fila contenido principal-->
-            <article class="col-12 my-5 d-flex justify-content-center  col-lg-4">
+            <article class="my-5 col-12 col-lg-4" id="img1">
                 <a href="#"><img src="img/genesis.jpg"></a>
             </article>
-            <article class="col-12 my-5 d-flex justify-content-center col-lg-4">
+            <article class="my-5 col-lg-4" id="img2">
                 <a href="#"><img src="img/sangredebarrio.jpg"></a>
             </article>
-            <article class="col-12 my-5 d-flex justify-content-center col-lg-4">
-                <a href="#"><img src="img/thesevendaughtersofeve.jpg"></a>
+            <article class="my-5 col-lg-4">
+                <a href="#"><img src="img/thesevendaughtersofeve.jpg" id="img3"></a>
         </section>
 
         <section class="row mt-5" id="detail">
@@ -109,11 +146,11 @@
             <!-- fixa el footer a sota -->
             <a href="#">
                 <!-- enllaç per tornar-hi al home -->
-                <img src="ico/chewie.png" class="m-2" title="It al home">
+                <img src="ico/chewie.png" class="m-2" title="Ir al home">
             </a>
             <a href="#">
                 <!-- enllaç per anar-hi al formaulari de contacte -->
-                <img src="ico/world.jpg" class="m-2" title="Contact us">
+                <img src="ico/world.jpg" class="m-2" title="Contacto">
             </a>
         </nav>
     </div>
