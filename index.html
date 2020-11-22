@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Inicialitzacio d'escala del navegador -->
+    <meta name="author" content="dncweb.net"><!--  Autor del web -->
+    <meta name="description"
+        content="Responsive book store shop & catalogue as a bootstrap 4 exercise at IT-Academy in barcelona">
+    <!--  descripció del web -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- link als estils de bootstrap -->
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+    <!-- link a google fonts -->
+    <link rel="stylesheet" href="css/style.css"> <!-- link a fulla d'estils pròpia -->
+    <title>Bring me the Bookie</title><!--  títol del la finestra del navegador -->
+</head>
+
+
+<body class="p-3">
+    <!-- marge interior del body -->
+    <div class="container-fluid">
+        <div class="row">
+            <!--FIla barra de navegacion-->
+            <div class="col mb-5">
+                <!-- aplica margin bottom -->
+                <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="navbar">
+                    <!-- fixa la barra de navegació a dalt del web , sempre visible -->
+                    <a class="navbar-brand" id="brand" href="#" title="Ir al home">Bring me the Bookie <img
+                            src="ico/chewie.png" class="navbar_logo"></a> <!-- enllaç al home del web -->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent">
+                        <span class="navbar-toggler-icon"></span>
+                        <!-- butó/icona hamburguesa per quan el menu és ocult -->
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <!-- part de la barra de navegació que es colapsa -->
+                        <div class="container d-md-flex justify-content-center">
+                            <form class="form-inline my-2">
+                                <!--  formulari de cerca del catàleg -->
+                                <input class="form-control form-control-sm" type="search"
+                                    placeholder="Buscar por autor, ISBN, editorial, categoría ..."
+                                    title="Introduzca cualquiera de los valores a buscar sobre el título deseado">
+                                <!-- input del text a cercar -->
+                                <button class="btn btn-sm btn-primary ml-0 ml-sm-2 my-2" type="submit"
+                                    title="Buscar según criterios">Buscar</button>
+                                <!-- butó per fer el submit de la cerca -->
+                            </form>
+                        </div>
+                        <ul class="navbar-nav ml-auto" id="menu_navbar">
+                            <!-- llista d'opcions del menú de navegació -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Acceso</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Catálogo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Dónde</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Quién</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <section class="row my-5" id="expo">
+            <!-- secció on s'exposa el catàleg de destacats o els resultats de la cerca -->
+            <!--Fila contenido principal-->
+            <article class="col-12 my-5 d-flex justify-content-center  col-lg-4">
+                <a href="#"><img src="img/genesis.jpg"></a>
+            </article>
+            <article class="col-12 my-5 d-flex justify-content-center col-lg-4">
+                <a href="#"><img src="img/sangredebarrio.jpg"></a>
+            </article>
+            <article class="col-12 my-5 d-flex justify-content-center col-lg-4">
+                <a href="#"><img src="img/thesevendaughtersofeve.jpg"></a>
+        </section>
+
+        <section class="row mt-5" id="detail">
+            <!-- secció on es mostra el detall del títol en focus de la secció anterior -->
+            <article class="col-6 d-flex justify-content-center d-flex align-items-center">
+                <h1 class="m-5" id="precio">32€</h1> <!-- preu del títol -->
+            </article>
+            <article class="col-6 d-flex justify-content-center d-flex align-items-center">
+                <p class="m-5">Libro de historietas encuadernado en rústica de 220 páginas interiores en
+                    blanco y negro
+                    más cubiertas.El libro del Génesis según Robert Crumb es una adaptación literal al lenguaje del
+                    cómic delprimero de los libros de la Biblia llevada a cabo por el prestigioso autor de cómics Robert
+                    Crumb, padre d...</p> <!-- descripció del títol -->
+            </article>
+        </section>
+
+        <div class="row my-5">
+            <!-- barra de navegació a peu de pàgina -->
+            <div class="col"></div>
+        </div>
+
+        <nav class="fixed-bottom bg-light d-flex justify-content-between" id="footer">
+            <!-- fixa el footer a sota -->
+            <a href="#">
+                <!-- enllaç per tornar-hi al home -->
+                <img src="ico/chewie.png" class="m-2" title="It al home">
+            </a>
+            <a href="#">
+                <!-- enllaç per anar-hi al formaulari de contacte -->
+                <img src="ico/world.jpg" class="m-2" title="Contact us">
+            </a>
+        </nav>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

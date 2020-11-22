@@ -1,0 +1,92 @@
+/* defineix altura mínima i color de fons del body */
+body {
+  min-height: 100vh;
+  background-color: rgba(245, 168, 53, 0.6);
+}
+
+/* defineix font del menu de navegació superior */
+#navbar {
+  font-family: "Courier Prime", monospace;
+  opacity: 0.8;
+}
+
+/* indica n ample màxim per la icona del logo */
+.navbar_logo {
+  max-width: 40px;
+}
+
+/* estableix imatge de fons de l'espai on visualitzem el resultat de la cerca o els destacats del catàleg */
+#expo {
+  background-image: url("../img/patrick-tomasso-Oaqk7qqNh_c-unsplash.jpg");
+  background-size: cover;
+  border-radius: 15px;
+}
+
+/* estableix imatge per la secció on mostrem preu i resum del títol seleccionat / amb focus */
+#detail {
+  background-image: url("../img/quadernblancMini.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+}
+
+/* tamany de font pel preu */
+#precio {
+  font-size: 20vw;
+}
+
+/* centra el text a la barra de cerca */
+.form-control {
+  text-align: center;
+}
+
+/* dimensió i opacitat del footer */
+#footer {
+  min-height: 5vh;
+  opacity: 0.8;
+}
+
+/* límit de tamany pel logo / link a home */
+#footer img {
+  max-height: 40px;
+}
+
+/* MEDIA QUERIES*/
+
+/* Modifiquen l'ample de la barra de cerca , el tamany de la font del brand y de les opcions de menu per tal de que no s'apilin i empenyin el button a una nova llinia */
+
+@media (min-width: 911px) {
+  .form-control {
+    min-width: 200px;
+  }
+  #brand {
+    font-size: 0.8em;
+  }
+  #menu_navbar {
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .form-control {
+    min-width: 400px;
+  }
+  #brand {
+    font-size: 0.8em;
+  }
+  #menu_navbar {
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 1900px) {
+  .form-control {
+    min-width: 900px;
+  }
+  #brand {
+    font-size: 0.8em;
+  }
+  #menu_navbar {
+    font-size: 0.8rem;
+  }
+}
